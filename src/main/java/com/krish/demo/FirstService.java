@@ -32,7 +32,7 @@ public class FirstService {
     private Environment environment;
 
 //    @Autowired  // no need of it, when we use Constructor for DI
-    public FirstService(/*@Qualifier("bean2") */FirstClass firstClass) {
+    public FirstService(/*@Qualifier("bean2") */@Qualifier("bean2") FirstClass firstClass) {
         this.firstClass = firstClass;
     }
 
