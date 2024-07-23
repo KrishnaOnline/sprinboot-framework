@@ -21,6 +21,7 @@ public class DemoApplication {
 							+"\n"+firstService.getCustomPropFromOtherFile()
 							+"\n"+firstService.getCustomPropFromAnotherFile()
 							);
+		System.out.println("Integer from .properties file: "+firstService.getCustomPropNumber());
 	}
 
 //	@Bean

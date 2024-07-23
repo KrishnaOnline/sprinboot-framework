@@ -20,6 +20,9 @@ public class FirstService {
     @Value("${my.property.name2}")
     private String customProperty;
 
+    @Value("${my.prop.num}")   // it can convert values to int/any other...
+    private Integer customPropNumber;
+
     @Value("${my.custom.prop}")
     private String customPropFromOtherFile;
 
@@ -67,5 +70,9 @@ public class FirstService {
 
     public String getCustomProperty() {
         return customProperty;
+    }
+
+    public Integer getCustomPropNumber() {
+        return customPropNumber;
     }
 }
